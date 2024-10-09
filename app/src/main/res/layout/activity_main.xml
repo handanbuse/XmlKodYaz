@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_activity_textviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kayıt Ol"
+        android:textColor="@color/siyah"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/main_activity_edittextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:hint="Kullanıcı Adını Giriniz"
+        android:textAlignment="center"
+        android:textColor="@color/siyah"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main_activity_textviewTitle"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/main_activity_edittextUserpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:hint="Şifrenizi Giriniz"
+        android:textAlignment="center"
+        android:textColor="@color/siyah"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main_activity_edittextUsername"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+
+        android:id="@+id/main_activity_buttonsignIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/defaultColor"
+        android:onClick="btnSignIn"
+        android:text="Giriş Yap"
+        android:textColor="@color/siyah"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main_activity_edittextUserpassword" />
+
+    <TextView
+        android:id="@+id/main_activity_textviewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sonuç"
+        android:textColor="@color/siyah"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="@id/main_activity_buttonsignIn"
+        app:layout_constraintRight_toRightOf="@id/main_activity_buttonsignIn"
+        app:layout_constraintTop_toBottomOf="@id/main_activity_buttonsignIn"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
